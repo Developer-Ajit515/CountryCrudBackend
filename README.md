@@ -154,17 +154,24 @@ Update the following values in **appsettings.json**:
 Example:
 
 ```json
-"ConnectionStrings": {
-  "conStr": "Your SQL Server Connection String"
-}
+{
+  "ConnectionStrings": {
+    "conStr": "Server=(localdb)\\mssqllocaldb;Database=Db_API_Country;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
 
-"Jwt": {
-  "Key": "YourSecretKey"
-}
+  "Razorpay": {
+    "Key": "rzp_test_T7P1ngV2XtLesv",
+    "Secret": "F0xEYm2MwSd7YNpob5g2dEXc"
+  },
 
-"Razorpay": {
-  "Key": "rzp_test_xxxxxxxxx",
-  "Secret": "xxxxxxxxxxxxx"
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+
+  "AllowedHosts": "*"
 }
 ```
 
